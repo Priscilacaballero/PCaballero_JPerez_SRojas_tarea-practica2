@@ -25,12 +25,9 @@ class FragmentOption6 : Fragment() {
 
         // Acción cuando se presiona el botón
         checkButton.setOnClickListener {
-            // Obtiene el id del RadioButton seleccionado
             val selectedOptionId = radioGroup.checkedRadioButtonId
 
-            // Comprobar cuál RadioButton fue seleccionado
             if (selectedOptionId != -1) {
-                // Encuentra el RadioButton seleccionado
                 val selectedRadioButton: RadioButton = view.findViewById(selectedOptionId)
 
                 // Verifica si la opción correcta (op_6) fue seleccionada
