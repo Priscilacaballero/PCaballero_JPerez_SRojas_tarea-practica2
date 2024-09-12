@@ -1,0 +1,14 @@
+<resources>
+<!-- Otros recursos existentes -->
+<string-array name="planets_array">
+    <item>Mercurio</item>
+    <item>Venus</item>
+    <item>Tierra</item>
+    <item>Marte</item>
+    <item>Júpiter</item>
+    <item>Saturno</item>
+    <item>Urano</item>
+    <item>Neptuno</item>
+    <item>Plutón</item> <!-- Incluyendo Plutón como opción, aunque no es un planeta oficial -->
+</string-array>
+</resources>

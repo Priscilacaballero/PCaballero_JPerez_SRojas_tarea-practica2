@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_option1"
+        android:title="Option 1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option2"
+        android:title="Option 2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option3"
+        android:title="Option 3"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option4"
+        android:title="Option 4"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option5"
+        android:title="Option 5"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option6"
+        android:title="Option 6"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option7"
+        android:title="Option 7"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_option8"
+        android:title="Option 8"
+        app:showAsAction="never" />
+</menu>
