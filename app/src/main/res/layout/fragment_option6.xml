@@ -1,6 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="275dp"
+        android:layout_height="343dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="194dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/op_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manzana" />
+
+        <RadioButton
+            android:id="@+id/op_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pera" />
+
+        <RadioButton
+            android:id="@+id/op_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kiwi" />
+
+        <RadioButton
+            android:id="@+id/op_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piña" />
+
+        <RadioButton
+            android:id="@+id/op_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limón" />
+
+        <RadioButton
+            android:id="@+id/op_6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ferrari" />
+
+        <RadioButton
+            android:id="@+id/op_7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fresa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="271dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="26dp"
+        android:text="Seleccione el elemento que no tiene nada que ver con los demás en la lista"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
