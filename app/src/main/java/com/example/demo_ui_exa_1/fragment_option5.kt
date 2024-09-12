@@ -10,9 +10,23 @@ import android.widget.ArrayAdapter
 import android.widget.AdapterView
 import android.widget.Toast
 import android.widget.Button
+import android.widget.TextView
 
 class FragmentOption5 : Fragment() {
     private var selectedPlanet: String? = null
+
+    // Mapa de descripciones de los planetas
+    private val planetDescriptions = mapOf(
+        "Mercurio" to "Mercurio es el planeta más cercano al Sol y el más pequeño del Sistema Solar.",
+        "Venus" to "Venus es el segundo planeta desde el Sol y tiene una atmósfera muy densa.",
+        "Tierra" to "La Tierra es nuestro hogar y el único planeta conocido con vida.",
+        "Marte" to "Marte es conocido como el planeta rojo y tiene las montañas más altas del Sistema Solar.",
+        "Júpiter" to "Júpiter es el planeta más grande del Sistema Solar, con una gran tormenta llamada la Gran Mancha Roja.",
+        "Saturno" to "Saturno es famoso por sus espectaculares anillos formados por hielo y roca.",
+        "Urano" to "Urano tiene un color azul debido al metano en su atmósfera y rota de manera única de lado.",
+        "Neptuno" to "Neptuno es el planeta más lejano del Sol y tiene los vientos más rápidos del Sistema Solar.",
+        "Plutón" to "Plutón es un planeta enano conocido por ser parte del cinturón de Kuiper."
+    )
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -22,6 +36,7 @@ class FragmentOption5 : Fragment() {
 
         val planetSpinner: Spinner = view.findViewById(R.id.Planetas_spinner)
         val btnSend: Button = view.findViewById(R.id.btn_send)
+        val txtDescripcion: TextView = view.findViewById(R.id.txt_descripcion)
 
         // Configuración del adaptador para el spinner
         ArrayAdapter.createFromResource(
@@ -44,10 +59,11 @@ class FragmentOption5 : Fragment() {
             }
         }
 
-        // Mostrar el mensaje cuando se presiona el botón
+        // Mostrar la descripción cuando se presiona el botón
         btnSend.setOnClickListener {
-            selectedPlanet?.let {
-                Toast.makeText(requireContext(), "Has escogido el planeta $it", Toast.LENGTH_SHORT).show()
+            selectedPlanet?.let { planet ->
+                val description = planetDescriptions[planet]
+                txtDescripcion.text = description ?: "Descripción no disponible."
             } ?: run {
                 Toast.makeText(requireContext(), "No has seleccionado ningún planeta", Toast.LENGTH_SHORT).show()
             }

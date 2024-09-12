@@ -1,6 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:id="@+id/guestNameEditText"
+        android:layout_width="337dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="18dp"
+        android:hint="Nombre del invitado"
+        app:layout_constraintBottom_toTopOf="@+id/btn_agregarinv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_agregarinv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="16dp"
+        android:text="Agregar Invitado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_eliminarinv"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ListView
+        android:id="@+id/lv_invitados"
+        android:layout_width="338dp"
+        android:layout_height="354dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/guestNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="21dp"
+        android:text="Lista de invitados a la fiesta"
+        app:layout_constraintBottom_toTopOf="@+id/lv_invitados"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_eliminarinv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="16dp"
+        android:text="Eliminar invitado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_agregarinv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

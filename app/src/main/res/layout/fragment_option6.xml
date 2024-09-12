@@ -11,10 +11,11 @@
         android:layout_height="50dp"
         android:layout_marginStart="70dp"
         android:layout_marginEnd="70dp"
-        android:layout_marginBottom="27dp"
+        android:layout_marginBottom="24dp"
         android:text="Seleccione el elemento que no tiene nada que ver con los demás en la lista"
         app:layout_constraintBottom_toTopOf="@+id/frutas_radgroup"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <RadioGroup
@@ -23,9 +24,10 @@
         android:layout_height="343dp"
         android:layout_marginStart="69dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="13dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_enviar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent">
 
         <RadioButton
@@ -77,9 +79,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:layout_marginEnd="128dp"
-        android:layout_marginBottom="48dp"
+        android:layout_marginBottom="95dp"
         android:text="Enviar respuesta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

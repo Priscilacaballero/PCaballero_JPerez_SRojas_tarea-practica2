@@ -1,5 +1,13 @@
 package com.example.demo_ui_exa_1
 
+/**
+
+ * Priscila Caballero, 8-1000-2151
+ * José Pérez, 8-993-595
+ * Sergio Rojas, 8-993-906
+
+ **/
+
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
