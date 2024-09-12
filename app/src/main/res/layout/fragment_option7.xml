@@ -1,6 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_calcularedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="26dp"
+        android:text="Calcular Edad"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_edad"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="146dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="22dp"
+        android:text="Edad:"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calcularedad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="322dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="24dp"
+        android:calendarViewShown="false"
+        android:spinnersShown="true"
+        app:layout_constraintBottom_toTopOf="@+id/txt_edad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_indicaciones"
+        android:layout_width="322dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="25dp"
+        android:text="Seleccione su fecha de nacimiento para calcular su edad"
+        app:layout_constraintBottom_toTopOf="@+id/datePicker"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
