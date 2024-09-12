@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Spinner
 import android.widget.ArrayAdapter
 import android.widget.AdapterView
+import android.widget.Toast
 
 
 class FragmentOption5 : Fragment() {
@@ -28,6 +29,16 @@ class FragmentOption5 : Fragment() {
             planetSpinner.adapter = adapter
         }
 
+        // Set an onItemSelectedListener for the spinner
+        planetSpinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(parent: AdapterView<*>, view: View?, position: Int, id: Long) {
+                val selectedPlanet = parent.getItemAtPosition(position).toString()
+                Toast.makeText(requireContext(), "Has escogido el planeta $selectedPlanet", Toast.LENGTH_SHORT).show()
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>) {
+            }
+        }
         return view
     }
 }
